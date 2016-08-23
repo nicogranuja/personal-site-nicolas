@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- css file -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="/css/weather_map.css" rel="stylesheet">
+    <title>Weather Map</title>
+</head>
+<body>
+<div class="container">
+    <div class="header col-sm-12">
+        <h1>Weather App</h1>    
+    </div>
+    <div class="col-sm-6">
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search for city name, or latitude and longitude" id="search">
+            <span class="input-group-btn">
+                <button class="btn btn-default" type="button" id="searchButton">Go!</button>
+            </span>
+    </div><!-- /input-group -->
+    </div>
+    <div class="col-sm-12">
+       <p class="text-center" id="cityName"></p>    
+    </div>
+    <div class="row divContent text-center" id="divContent">
+          
+    </div>
+    <br>
+    <div class="row-map">
+        <div class="col-sm-12">     
+            <div id="map-canvas"></div> 
+        </div>
+    </div>
+
+</div>
+
+<!-- Load the Google Maps API [DON'T FORGET TO USE A KEY] -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDn8BdvFPjdzr2ZWxpQ0uMRSkdgve4d490"></script>
+<!-- Jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- javascript file -->
+<script type="text/javascript" src="/js/weather_map.js"></script>
+
+</body>
+</html>

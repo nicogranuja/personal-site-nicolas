@@ -1,0 +1,47 @@
+img{
+	height: 50px;
+	width: 100px;
+}
+button{
+	height:80px;
+	width: 80px;
+}
+p{
+	font-size: 1em;
+}
+.container{
+	background: -webkit-linear-gradient(top,  #3f4c6b 0%,#3f4c6b 100%);
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.5em;
+	border: 2px solid black;
+	position: absolute;
+	width: 480px;
+}
+
+.buttons{
+	padding-left:50px;
+}
+
+#textResult{
+	color:white;
+	background-color: lightblue;
+	height:130px;
+	font-size: 2.2em;
+}
+
+#rightInput, #leftInput{
+	height: 75px;
+	background-color: rgb(78, 137, 232);
+}
+#operator{
+	color:white;
+	height: 75px;
+	position: relative;
+	left: -28px;
+	width: 100px;
+	background-color: rgb(249, 181, 62);
+}
+#rightInput, #leftInput, #operator{
+	font-size: 1.9em;
+	color:white;
+}

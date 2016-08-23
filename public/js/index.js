@@ -1,5 +1,15 @@
 $(document).ready(function() {
 	"use strict";
+	var $welcome = $('#welcomeMessage');
+
+	//message that shows first greeting.
+	function welcomeMessage(){
+		$welcome.hide();
+		setTimeout(function(){
+			$welcome.text('Welcome to my webpage.');
+			$welcome.fadeIn("slow");
+		},1500);
+	}
 	/*****Start Smooth Scrolling*/
 	// Add smooth scrolling to all links
 	$("a").on('click', function(event) {
@@ -27,5 +37,8 @@ $(document).ready(function() {
 		//}
 	});
 	/*****End Smooth Scrolling*/
+
+	welcomeMessage();
+	
 
 });
