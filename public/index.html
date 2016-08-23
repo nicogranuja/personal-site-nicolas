@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,12 +18,14 @@
 
     <!-- Custom CSS -->
     <style>
-    
+
     </style>
 </head>
 
 <body>
-    <a id="welcome"></a>
+    <div>
+        <a id="welcome" class="scrollSmooth"></a><br><br>
+    </div>
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
@@ -37,7 +37,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#welcome">Welcome Page</a>
+                <a class="navbar-brand" href="#welcome" >Welcome Page</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -46,10 +46,10 @@
                         <a href="/aboutme.php">About Me</a>
                     </li> -->
                     <li>
-                        <a href="#portfolio">Portfolio</a>
+                        <a href="#portfolio" >Portfolio</a>
                     </li>
                     <li>
-                        <a href="#resume">Resume</a>
+                        <a href="#resume" >Resume</a>
                     </li>
                 </ul>
             </div>
@@ -80,73 +80,150 @@
                 <h2>What I do</h2>
                 <p>Web developer in formation.</p>
                 <p>
-                Some wise words:
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et molestiae similique eligendi reiciendis sunt distinctio odit? Quia, neque, ipsa, adipisci quisquam ullam deserunt accusantium illo iste exercitationem nemo voluptates asperiores.</p>
-                <p>
-                    <a class="btn btn-default btn-lg" href="/portfolio.php">Learn More &raquo;</a>
-                </p>
+                    Some wise words:
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et molestiae similique eligendi reiciendis sunt distinctio odit? Quia, neque, ipsa, adipisci quisquam ullam deserunt accusantium illo iste exercitationem nemo voluptates asperiores.</p>
+                    <p>
+                        <a class="btn btn-default btn-lg" href="/portfolio.php">Learn More &raquo;</a>
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <h2>Contact Me</h2>
+                    <address>
+                        <strong>Info</strong>
+                        <br>address here
+                        <br>San Antonio, TX 78232 
+                        <br>
+                    </address>
+                    <address>
+                        <abbr title="Phone">P:</abbr>(361) 349-XXXX
+                        <br>
+                        <abbr title="Email">E:</abbr> <a href="mailto:nicogranuja@hotmail.com">nicogranuja@hotmail.com</a>
+                    </address>
+                </div>
             </div>
-            <div class="col-sm-4">
-                <h2>Contact Me</h2>
-                <address>
-                    <strong>Info</strong>
-                    <br>address here
-                    <br>San Antonio, TX 78232 
-                    <br>
-                </address>
-                <address>
-                    <abbr title="Phone">P:</abbr>(361) 349-XXXX
-                    <br>
-                    <abbr title="Email">E:</abbr> <a href="mailto:nicogranuja@hotmail.com">nicogranuja@hotmail.com</a>
-                </address>
+            <!-- /.row -->
+
+            <hr>
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <img class="img-circle img-responsive img-center" src="/img/designPic.jpg" alt="Design">
+                    <h2>Front End Design</h2>
+                    <p>Designing WebPages Info.</p>
+                </div>
+                <div class="col-sm-4">
+                    <img class="img-circle img-responsive img-center" src="/img/backendPic.jpg" alt="Programming Pic">
+                    <h2>Back End Programming</h2>
+                    <p>Info about the programming languages etc.</p>
+                </div>
+                <div class="col-sm-4">
+                    <img class="img-circle img-responsive img-center" src="/img/database.jpg" alt="database">
+                    <h2>Database Management</h2>
+                    <p>Database Info.</p>
+                </div>
             </div>
+            <!-- /.row -->
+
+
+            <!-- Beginning of Portfolio -->
+            <!-- Portfolio Item Heading -->
+            <p id="portfolio" class="scrollSmooth"></p>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Portfolio
+                        <small>Web Pages</small>
+                    </h1>
+                </div>
+            </div>
+            <!-- /.row -->
+
+            <!-- Portfolio Item Row -->
+            <div class="row">
+
+                <div class="col-md-8">
+
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                      <!-- Indicators -->
+                      <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <a href="../../simplesimon.dev/public/index.html" title="simple simon game">
+                                <img src="/img/simpleSimon.png" alt="First slide" class="img-carousel">
+                            </a>
+                        <div class="carousel-caption">
+                            <h3>Simple Simon Game</h3>
+                        </div>
+                        </div>
+                        <div class="item">
+                            <a href="" title=""> 
+                                <img src="/img/weatherApi.png" alt="Second slide" class="img-carousel">
+                            </a>
+                            <div class="carousel-caption">
+                                <h3>Weather API and Google Maps API</h3>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a href="" title=""> 
+                                <img src="/img/calculator.png" alt="Third slide" class="img-carousel">
+                            </a>
+                            <div class="carousel-caption">
+                                <h3>Calculator</h3>
+                            </div>
+                        </div>
+                    </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
-        <!-- /.row -->
-
-        <hr>
-
-        <div class="row">
-            <div class="col-sm-4">
-                <img class="img-circle img-responsive img-center" src="/img/designPic.jpg" alt="Design">
-                <h2>Front End Design</h2>
-                <p>Designing WebPages Info.</p>
-            </div>
-            <div class="col-sm-4">
-                <img class="img-circle img-responsive img-center" src="/img/backendPic.jpg" alt="Programming Pic">
-                <h2>Back End Programming</h2>
-                <p>Info about the programming languages etc.</p>
-            </div>
-            <div class="col-sm-4">
-                <img class="img-circle img-responsive img-center" src="/img/database.jpg" alt="database">
-                <h2>Database Management</h2>
-                <p>Database Info.</p>
-            </div>
+        <!-- <img class="img-responsive" src="/img/googlePic.jpg" alt="google pic"> -->
+               <!--  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                    <a href="../../simplesimon.dev/public/index.html" title="simple simon game">
+                        <img src="/img/simpleSimon.png" alt="First slide">
+                    </a>
+                    </div>
+                    <div class="carousel-item">
+                    <a href="" title=""> 
+                        <img src="/img/weatherApi.png" alt="Second slide">
+                    </a>
+                    </div>
+                    <div class="carousel-item"> 
+                    <img src="/img/calculator.png" alt="Third slide">
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="icon-prev" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="icon-next" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div> -->
         </div>
-        <!-- /.row -->
 
-
-        <!-- Beginning of Portfolio -->
-        <!-- Portfolio Item Heading -->
-        <p id="portfolio"></p>
-        <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header">Portfolio
-                    <small>Web Pages</small>
-                </h1>
-            </div>
-        </div>
-        <!-- /.row -->
-
-        <!-- Portfolio Item Row -->
-        <div class="row">
-
-            <div class="col-md-8">
-                <img class="img-responsive" src="/img/googlePic.jpg" alt="google pic">
-            </div>
-
-            <div class="col-md-4">
-                <h3>Projects Description</h3>
-                <p>Projects I have been working on not yet finished, or not
+        <div class="col-md-4">
+            <h3>Projects Description</h3>
+            <p>Projects I have been working on not yet finished, or not
                 created by me</p>
                 <h3>Project Details</h3>
                 <ul>
@@ -159,44 +236,13 @@
 
         </div>
         <!-- /.row -->
-
-        <!-- Related Projects Row -->
-        <div class="row">
-
-            <div class="col-lg-12">
-                <h3 class="page-header">Related Projects</h3>
-            </div>
-
-            <div class="col-sm-3 col-xs-6">
-                <a href="/portfolio_1.php">
-                    <img class="img-responsive portfolio-item" src="/img/facebookPic.png" alt="facebook pic">
-                </a>
-            </div>
-
-            <div class="col-sm-3 col-xs-6">
-                <a href="/portfolio_2.php">
-                    <img class="img-responsive portfolio-item" src="/img/pandoraPic.jpg" alt="pandora pic">
-                </a>
-            </div>
-
-            <div class="col-sm-3 col-xs-6">
-                <a href="/portfolio_3.php">
-                    <img class="img-responsive portfolio-item" src="/img/raspberrypi.jpeg" alt="amazon picture">
-                </a>
-            </div>
-
-            <div class="col-sm-3 col-xs-6">
-                <a href="/portfolio_4.php">
-                    <img class="img-responsive portfolio-item" src="/img/amazonpic.jpg" alt="amazon picture">
-                </a>
-            </div>
-
-        </div>
         <!-- End Portfolio -->
 
 
         <!-- Start resume -->
-        <p id="resume"></p>
+        <div>
+            <p id="resume" class="scrollSmooth"></p><br><br>
+        </div>
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h1>My Resume</h1>
@@ -237,10 +283,10 @@
             <div class="col-sm-6">
                 <h3>Something important here</h3>
                 <p>
-                Graph here
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    Graph here
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                 </p>
             </div>
             <!-- Technical knowledge pics and bars -->
@@ -255,7 +301,7 @@
                 <span>Javascript, HTML, CSS, MySQL, PHP</span>
                 <div class="progress">
                     <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 20%"><span class="sr-only">80% Complete (danger)</span></div>
-                 </div>
+                </div>
                 <br>
 
                 <img src="/img/c++.png" alt="c++ picture" class="img-languages">
@@ -278,25 +324,25 @@
         <!-- footer -->
         <footer>
             <div class="row" class="footer">
-                    <div class="col-sm-6 text-center">
-                        <img src="https://cdn4.iconfinder.com/data/icons/maps-and-navigation-solid-icons-vol-1/72/35-512.png" class="img-footer"><span>Location</span><p>Info where the address is going to go.</p>
-                        
-                    </div>
-                    <div class="col-sm-6 text-center">
-                        <a href="http://www.facebook.com" target="_blank">
-                            <img src="http://topshelfcateringcompany.com/wp-content/themes/topshelf-child/img/footer-facebook-icon.gif" class="img-social">
-                        </a>
-                        <a href="http://www.linkedin.com" target="_blank">
-                            <img src="http://www.assh.org/portals/2/Images/Logos/linkedin.png" class="img-social">
-                        </a>
-                        <a href="http://www.github.com" target="_blank">
-                            <img src="https://0.gravatar.com/avatar/100e42bb243b574f50c9e79d625f631c?d=https%3A%2F%2Fassets-cdn.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png&r=x&s=140" class="img-social">
-                        </a>
-                        <a href="http://www.instagram.com" target="_blank">
-                            <img src="https://just-taste.com/wp-content/uploads/icon-instagram-footer.png" class="img-social">
-                        </a>
-                        <p>Follow us on Social Media</p>
-                    </div>
+                <div class="col-sm-6 text-center">
+                    <img src="https://cdn4.iconfinder.com/data/icons/maps-and-navigation-solid-icons-vol-1/72/35-512.png" class="img-footer"><span>Location</span><p>Info where the address is going to go.</p>
+
+                </div>
+                <div class="col-sm-6 text-center">
+                    <a href="http://www.facebook.com" target="_blank">
+                        <img src="http://topshelfcateringcompany.com/wp-content/themes/topshelf-child/img/footer-facebook-icon.gif" class="img-social">
+                    </a>
+                    <a href="http://www.linkedin.com" target="_blank">
+                        <img src="http://www.assh.org/portals/2/Images/Logos/linkedin.png" class="img-social">
+                    </a>
+                    <a href="http://www.github.com" target="_blank">
+                        <img src="https://0.gravatar.com/avatar/100e42bb243b574f50c9e79d625f631c?d=https%3A%2F%2Fassets-cdn.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png&r=x&s=140" class="img-social">
+                    </a>
+                    <a href="http://www.instagram.com" target="_blank">
+                        <img src="https://just-taste.com/wp-content/uploads/icon-instagram-footer.png" class="img-social">
+                    </a>
+                    <p>Follow us on Social Media</p>
+                </div>
             </div>
             <br>
             <p>Copyright &copy; Your Website 2014</p>
@@ -305,13 +351,13 @@
     </div>
     <!-- /.container -->
 
+    
     <!-- Jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <!-- Bootstrap -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- javascript file -->
     <script type="text/javascript" src="/js/index.js"></script>
-
 </body>
 
 </html>
