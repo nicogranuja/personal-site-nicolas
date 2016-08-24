@@ -87,9 +87,9 @@ $(document).ready(function() {
 		var positionY = window.pageYOffset;
 		var navbarHeight = parseInt($('nav').css('height'));
 		var offsetDescription = $('#scroller').offset().top;
-		if(positionY > offsetDescription-navbarHeight){
-			console.log("inside if");
+		if(positionY > offsetDescription-(navbarHeight*4)){
 			//$description.hide();
+			console.log("scrolled");
 			//fadeInAnimation($description);
 		}	
 	});
