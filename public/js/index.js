@@ -3,19 +3,26 @@ $(document).ready(function() {
 	var $welcome = $('#welcomeMessage'); //h1 welcome message
 	var $description = $('#projectDescrition'); //p tag for describing the projects
 
+	function fadeLeft(element){
+		element.animate({ 
+			opacity: 0, 
+			right: "80px",
+			opacity:1,
+			left:"80px" 
+		},'slow');
+	}
 	//fade in animation for elements
 	function fadeInAnimation(element){
 		setTimeout(function() {
-			element.fadeIn();
-		}, 80);
+			element.fadeIn("slow");
+		}, 100);
 	}
 	//message that shows first greeting.
 	function welcomeMessage() {
-		$welcome.hide();
 		setTimeout(function() {
 			$welcome.text('Welcome to my webpage.');
-			$welcome.fadeIn("slow");
-		}, 1500);
+			$welcome.hide().fadeIn("slow");
+		}, 900);
 	}
 	/*****Start Smooth Scrolling*/
 	// Add smooth scrolling to all links
@@ -84,18 +91,32 @@ $(document).ready(function() {
 	});
 	//scrolling funciton
 	$(window).scroll(function() {
-		var positionY = window.pageYOffset;
-		var navbarHeight = parseInt($('nav').css('height'));
-		var offsetDescription = $('#scroller').offset().top;
+		var positionY = window.pageYOffset;//window Y value
+		var navbarHeight = parseInt($('nav').css('height'));//navbar height
+		var offsetDescription = $('#scroller').offset().top;//position top of the div that will trigger the scroll event
+		var offsetImages = $('#scrollImages').offset().top;//postition of div for images
+		var offsetKnowledge = $('#scrollKnowledge').offset().top;//position of div for knowledge
+
 		if(positionY > offsetDescription-(navbarHeight*4)){
-			//$description.hide();
-			console.log("scrolled");
-			//fadeInAnimation($description);
-		}	
+			fadeInAnimation($description);
+			// console.log('scroll carousel.');
+			//fadeLeft($description);
+		}
+
+		if(positionY > offsetImages-(navbarHeight*5)){
+			// fadeInAnimation($description);
+			// console.log('scroll images.');
+		}
+
+		if(positionY > offsetKnowledge-(navbarHeight*5)){
+			// fadeInAnimation($description);
+			// console.log('scroll knowledge.');
+		}
+
 	});
 
 	
-	
+	$description.hide();
 	welcomeMessage();
 
 
