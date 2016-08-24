@@ -5,13 +5,13 @@
  */
 
 body {
-    padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    /*padding-top: 50px;  Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
 /* Header Image Background - Change the URL below to your image path (example: ../images/background.jpg) */
 /*css for welcome*/
 .business-header {
-    height: 400px;
+    height: 700px;
     /*background: url('/img/welcomepic.jpg') center center no-repeat scroll;*/
     background: url('/img/buildings.jpeg') center center no-repeat scroll;
     -webkit-background-size: cover;
@@ -42,10 +42,11 @@ span
 
 footer
 {
-    height: auto;
+    padding-bottom: 0;
+    height: 80px;
     width: 100%;
     color:white;
-    background-color: #2C3F46;
+    background-color: #222222;
     background-size: cover;
 }
 .img-languages

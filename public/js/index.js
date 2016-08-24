@@ -3,10 +3,11 @@ $(document).ready(function() {
 	var $welcome = $('#welcomeMessage'); //h1 welcome message
 	var $description = $('#projectDescrition'); //p tag for describing the projects
 
-
-
-	function projectsCarousel() {
-
+	//fade in animation for elements
+	function fadeInAnimation(element){
+		setTimeout(function() {
+			element.fadeIn();
+		}, 80);
 	}
 	//message that shows first greeting.
 	function welcomeMessage() {
@@ -19,10 +20,7 @@ $(document).ready(function() {
 	/*****Start Smooth Scrolling*/
 	// Add smooth scrolling to all links
 	$(".smooth").on('click', function(event) {
-		console.log("a clicked");
 		// Make sure this.hash has a value before overriding default behavior
-		//if($(this).attr('id') == 'a1' || $(this).attr('id') == 'portfolio' || $(this).attr('id') == 'resume'){
-		//console.log("i am smooth");
 		if (this.hash !== "") {
 			// Prevent default anchor click behavior
 			event.preventDefault();
@@ -37,14 +35,9 @@ $(document).ready(function() {
 				window.location.hash = hash;
 			});
 		} // End if
-		// }
-		// else{
-		//	console.log("else");
-		//return;
-		//}
 	});
 	/*****End Smooth Scrolling*/
-		
+
 	// Listen to the 'slid carousel' event
 	// to trigger our code after each slide change
 	$('.carousel').on('slid.bs.carousel', function() {
@@ -85,9 +78,24 @@ $(document).ready(function() {
 				console.log("default");
 		}
 		$description.html(content);
+		$description.hide();
+		fadeInAnimation($description);
 
 	});
+	//scrolling funciton
+	$(window).scroll(function() {
+		var positionY = window.pageYOffset;
+		var navbarHeight = parseInt($('nav').css('height'));
+		var offsetDescription = $('#scroller').offset().top;
+		if(positionY > offsetDescription-navbarHeight){
+			console.log("inside if");
+			//$description.hide();
+			//fadeInAnimation($description);
+		}	
+	});
 
+	
+	
 	welcomeMessage();
 
 
