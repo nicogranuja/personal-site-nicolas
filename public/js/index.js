@@ -18,7 +18,8 @@ $(document).ready(function() {
 	}
 	/*****Start Smooth Scrolling*/
 	// Add smooth scrolling to all links
-	$("a").on('click', function(event) {
+	$(".smooth").on('click', function(event) {
+		console.log("a clicked");
 		// Make sure this.hash has a value before overriding default behavior
 		//if($(this).attr('id') == 'a1' || $(this).attr('id') == 'portfolio' || $(this).attr('id') == 'resume'){
 		//console.log("i am smooth");
@@ -43,7 +44,7 @@ $(document).ready(function() {
 		//}
 	});
 	/*****End Smooth Scrolling*/
-	
+		
 	// Listen to the 'slid carousel' event
 	// to trigger our code after each slide change
 	$('.carousel').on('slid.bs.carousel', function() {
