@@ -10,10 +10,10 @@ body {
 h1{
     color:#FFA07A;
 }
-h2{
+/*h2{
     color: #00A878;
-}
-h3{
+}*/
+h3, h2{
     color: #0FA3B1;
 }
 .colorK{
@@ -37,9 +37,10 @@ i {
     /*background-color: #E8EEF2;*/
 }
 .business-header {
-    height: 400px;
-    /*background: url('/img/welcomepic.jpg') center center no-repeat scroll;*/
-    background: url('/img/buildings.jpeg') center center no-repeat scroll;
+    height: 500px;
+    background: url('https://hd.unsplash.com/photo-1414115880398-afebc3d95efc') center center no-repeat scroll;
+    /*background: url('/img/buildings.jpeg') center center no-repeat scroll;*/
+    /*background: url('/img/stars.jpeg') center center no-repeat scroll;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -88,6 +89,9 @@ footer
     color:white;
     background-color: #222222;
     background-size: cover;
+}
+.img-abilities{
+    border:1px solid black  ;
 }
 .img-languages
 {
