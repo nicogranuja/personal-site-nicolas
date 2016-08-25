@@ -21,11 +21,11 @@ $(document).ready(function() {
 	//message that shows first greeting.
 	function welcomeMessage() {
 		setTimeout(function() {
-			$welcome.text('Hi, I am Nicolas, welcome.');
+			$welcome.text('Hi, welcome to my website.');
 			$welcome.hide().fadeIn("slow");
 			// $profile.hide().slideDown("slow");
 
-		}, 900);
+		}, 700);
 	}
 	/*****Start Smooth Scrolling*/
 	// Add smooth scrolling to all links

@@ -37,7 +37,8 @@ i {
     /*background-color: #E8EEF2;*/
 }
 .business-header {
-    height: 500px;
+    /*height: 500px;*/
+    height:80vh; 
     background: url('https://hd.unsplash.com/photo-1414115880398-afebc3d95efc') center center no-repeat scroll;
     /*background: url('/img/buildings.jpeg') center center no-repeat scroll;*/
     /*background: url('/img/stars.jpeg') center center no-repeat scroll;*/
@@ -91,7 +92,9 @@ footer
     background-size: cover;
 }
 .img-abilities{
-    border:1px solid black  ;
+    border:1px solid black;
+    height:35vh;
+    width:40vh;
 }
 .img-languages
 {
