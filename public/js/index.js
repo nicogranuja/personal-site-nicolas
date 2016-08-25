@@ -2,6 +2,7 @@ $(document).ready(function() {
 	"use strict";
 	var $welcome = $('#welcomeMessage'); //h1 welcome message
 	var $description = $('#projectDescrition'); //p tag for describing the projects
+	var $profile = $('#profilePicture');
 
 	function fadeLeft(element){
 		element.animate({ 
@@ -20,8 +21,10 @@ $(document).ready(function() {
 	//message that shows first greeting.
 	function welcomeMessage() {
 		setTimeout(function() {
-			$welcome.text('Welcome to my webpage.');
+			$welcome.text('Hi, Im Nicolas, welcome.');
 			$welcome.hide().fadeIn("slow");
+			$profile.hide().slideDown("slow");
+
 		}, 900);
 	}
 	/*****Start Smooth Scrolling*/
@@ -115,7 +118,7 @@ $(document).ready(function() {
 
 	});
 
-	
+	$profile.hide();
 	$description.hide();
 	welcomeMessage();
 

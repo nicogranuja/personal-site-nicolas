@@ -55,7 +55,7 @@
                         <a href="#resume" class="smooth">Resume</a>
                     </li>
                 </ul>
-                <div class="text-right">
+                <div class="text-right nav">
                 <a href="http://www.facebook.com" target="_blank">
                     <i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i>
                 </a>
@@ -81,7 +81,8 @@
     <header class="business-header">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="text-center">
+                    <img src="/img/profileCodeup" alt="profile" class="img-circle" id="profilePicture">
                     <h1 class="tagline" id="welcomeMessage"></h1>
                 </div>
             </div>
@@ -98,22 +99,21 @@
                 <h2>What I do</h2>
                 <p>Web developer in formation.</p>
                 <p>
-                    Some wise words:
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et molestiae similique eligendi reiciendis sunt distinctio odit? Quia, neque, ipsa, adipisci quisquam ullam deserunt accusantium illo iste exercitationem nemo voluptates asperiores.</p>
+                    I am a computer science student with a <acronym>A.A</acronym> in computer programming,I currently in formation taking a coding bootcamp at Codeup to become a full stack web developer.
+                </p>
                     <p>
-                        <a class="btn btn-default btn-lg" href="/portfolio.php">Learn More &raquo;</a>
+                        <a class="btn btn-default btn-lg smooth" href="#resume">Learn More &raquo;</a>
                     </p>
                 </div>
                 <div class="col-sm-4">
                     <h2>Contact Me</h2>
                     <address>
                         <strong>Info</strong>
-                        <br>address here
                         <br>San Antonio, TX 78232 
                         <br>
                     </address>
                     <address>
-                        <abbr title="Phone">P:</abbr>(361) 349-XXXX
+                        <abbr title="Phone">P:</abbr>(361) 349-1401
                         <br>
                         <abbr title="Email">E:</abbr> <a href="mailto:nicogranuja@hotmail.com">nicogranuja@hotmail.com</a>
                     </address>
@@ -127,17 +127,17 @@
                 <div class="col-sm-4">
                     <img class="img-circle img-responsive img-center" src="/img/designPic.jpg" alt="Design">
                     <h2>Front End Design</h2>
-                    <p>Designing WebPages Info.</p>
+                    <p>With languages and frameworks such as CSS,Javascript, Jquery and HTML </p>
                 </div>
                 <div class="col-sm-4">
                     <img class="img-circle img-responsive img-center" src="/img/backendPic.jpg" alt="Programming Pic">
                     <h2>Back End Programming</h2>
-                    <p>Info about the programming languages etc.</p>
+                    <p>With the help of PHP and the Laravel framework</p>
                 </div>
                 <div class="col-sm-4">
                     <img class="img-circle img-responsive img-center" src="/img/database.jpg" alt="database">
                     <h2>Database Management</h2>
-                    <p>Database Info.</p>
+                    <p>Using MySQL.</p>
                 </div>
             </div>
             <!-- /.row -->
@@ -237,44 +237,56 @@
         </div>
         <!-- /.row -->
         <div class="row">
-            <div class="col-sm-6">
-                <img src="/img/linuxPic.png" class="img-thumbnail" alt="200x200" style="width: 200px; height: 200px; border-width:60%;"  data-holder-rendered="true">
-            </div>
-            <div class="col-sm-6">
-
-                Info about the picture here
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <div class="col-sm-12">
+                <div class="col-sm-6">         
+                    <h3>Objectives</h3>
+                    <ul>
+                        <li>Get work experience working as a software developer.</li>
+                        <li>Keep studying part time to get my batchelors in CS.</li>
+                        <li>Keep learning and addapt as new technologies appear in the industry.</li>
+                    </ul>
+                </div>
+                <div class="col-sm-6">         
+                    <h3>Skills</h3>
+                    <ul>
+                        <li>Ability to work independently and within groups.</li>
+                        <li>Critical thinking.</li>
+                        <li>Good understanding of how to approach a problem to solve it efficiently.</li>
+                    </ul>
+                </div>  
+                <!-- Large modal -->
+                <!-- Button trigger modal -->
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Nicolas A.M resume</h4>
+                      </div>
+                      <div class="modal-body">
+                        <!-- resume pdf embeded -->
+                        <object data="/documents/resumeExample.pdf" type="application/pdf" width="100%" height="100%">
+                            <iframe src="/documents/resumeExample.pdf" width="100%" height="100%" style="border: none;">
+                                This browser does not support PDFs. Please download the PDF to view it: 
+                                <a href="/documents/resumeExample.pdf">Download PDF</a>
+                            </iframe>
+                        </object>
+                      <!-- end -->
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>    
             </div>
         </div>
-        <div class="col-sm-6">
-            <h3>Skills</h3>
-            <ul>
-                <li>
-                    Team Work
-                </li>
-                <li>
-                    Lone Wolf
-                </li>
-                <li>
-                    More stuff...
-                </li>
-            </ul>
-        </div>
+        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">
+                  Complete Resume
+        </button>
         <div class="row">
-            <div class="col-sm-6">
-                <h3>Something important here</h3>
-                <p>
-                    Graph here
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                </p>
-            </div>
+            
             <div id="scrollKnowledge"></div>
             <!-- Technical knowledge pics and bars -->
             <div class="col-md-12" class="technicalKnowledge">
@@ -313,23 +325,31 @@
     <footer>
         <div class="row" class="footer">
             <div class="col-sm-6 text-center">
-                <img src="https://cdn4.iconfinder.com/data/icons/maps-and-navigation-solid-icons-vol-1/72/35-512.png" class="img-footer"><span>Location</span><p>Info where the address is going to go.</p>
-
+                <img src="https://www.ccc.govt.nz/themes/ccc-default/images/icons/Location-white-icon.png" class="img-footer"><span>Location</span><p>San Antonio, Texas</p>
             </div>
-            
+            <div class="col-sm-6 text-center">
+                <p>
+                    <i class="fa fa-phone-square fa-2x" aria-hidden="true"></i>
+                    <br>
+                    <b>Phone:</b> 361-349-1401
+                </p>
+                <p> 
+                    <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+                    <br>
+                    <b>Email:</b><a href="mailto:nicogranuja@hotmail.com?subject=feedback" "email me"> nicogranuja@hotmail.com</a>
+                </p>
+            </div>
         </div>
         <br>
     </footer>
-        <!-- footer --> 
-
-    
+    <!-- footer --> 
     <!-- Jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <!-- Bootstrap -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- javascript file -->
     <script type="text/javascript" src="/js/index.js"></script>
-    <<script src="https://use.fontawesome.com/37f2d2a99c.js"></script>
+    <script src="https://use.fontawesome.com/37f2d2a99c.js"></script>
 </body>
 
 </html>

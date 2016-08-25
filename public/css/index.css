@@ -11,6 +11,7 @@ body {
 /* Header Image Background - Change the URL below to your image path (example: ../images/background.jpg) */
 /*css for welcome*/
 i {
+    margin-top: 7px;
     font-size:40px;
 }
 .business-header {
@@ -36,6 +37,15 @@ i {
 
 
 /*css for welcome*/
+#welcomeMessage{
+    color:aliceblue;
+}
+#profilePicture{
+    margin-top: 170px;
+    border: 1px solid aliceblue;
+    height:195px;
+    width:160px;
+}
 
 /*css for resume*/
 span
@@ -46,7 +56,7 @@ span
 footer
 {
     padding-bottom: 0;
-    height: 80px;
+    height: 130px;
     width: 100%;
     color:white;
     background-color: #222222;
@@ -75,5 +85,9 @@ footer
 .img-carousel{
     height:400px;
     width: 400px;
+}
+
+.modal-body {
+    height: 500px;
 }
 /*css for resume*/
