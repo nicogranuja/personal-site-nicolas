@@ -82,8 +82,7 @@
         <div class="container">
             <div class="row">
                 <div class="text-center">
-                    <img src="/img/profileCodeup" alt="profile" class="img-circle" id="profilePicture">
-                    <h1 class="tagline" id="welcomeMessage"></h1>
+                    <h1 class="tagline text-right" id="welcomeMessage"></h1>
                 </div>
             </div>
         </div>
@@ -91,53 +90,56 @@
 
     <!-- Page Content -->
     <div class="container">
-
         <hr>
-
-        <div class="row">
-            <div class="col-sm-8">
-                <h2>What I do</h2>
-                <p>Web developer in formation.</p>
-                <p>
-                    I am a computer science student with a <acronym>A.A</acronym> in computer programming,I currently in formation taking a coding bootcamp at Codeup to become a full stack web developer.
-                </p>
+        <div class="jumbotron">  
+            <div class="row">
+                <div class="col-sm-8">
+                    <h2 class="colorK">What I do</h3>
+                    <p>Web developer in formation.</p>
                     <p>
-                        <a class="btn btn-default btn-lg smooth" href="#resume">Learn More &raquo;</a>
+                        I am a computer science student with a <acronym>A.A</acronym> in computer programming,I currently in formation taking a coding bootcamp at Codeup to become a full stack web developer.
                     </p>
+                        <p>
+                            <a class="btn btn-default btn-lg smooth" href="#resume">Learn More &raquo;</a>
+                        </p>
+                    </div>
+                    <div class="col-sm-4">
+                        <h2 class="colorK">Contact Me</h3>
+                        <address>
+                            <strong>Info</strong>
+                            <br>San Antonio, TX 78232 
+                            <br>
+                        </address>
+                        <address>
+                            <abbr title="Phone">P:</abbr>(361) 349-1401
+                            <br>
+                            <abbr title="Email">E:</abbr> <a href="mailto:nicogranuja@hotmail.com">nicogranuja@hotmail.com</a>
+                        </address>
+                    </div>
                 </div>
-                <div class="col-sm-4">
-                    <h2>Contact Me</h2>
-                    <address>
-                        <strong>Info</strong>
-                        <br>San Antonio, TX 78232 
-                        <br>
-                    </address>
-                    <address>
-                        <abbr title="Phone">P:</abbr>(361) 349-1401
-                        <br>
-                        <abbr title="Email">E:</abbr> <a href="mailto:nicogranuja@hotmail.com">nicogranuja@hotmail.com</a>
-                    </address>
-                </div>
-            </div>
             <!-- /.row -->
+        </div>
 
             <hr>
             <div id="scrollImages"></div>
-            <div class="row">
+            <div class="row" id="abilities">
                 <div class="col-sm-4">
-                    <img class="img-circle img-responsive img-center" src="/img/designPic.jpg" alt="Design">
+                    <img class="img-rounded img-responsive img-center" src="/img/designPic.jpg" alt="Design">
                     <h2>Front End Design</h2>
-                    <p>With languages and frameworks such as CSS,Javascript, Jquery and HTML </p>
+                    <!-- <p>With languages and frameworks such as CSS,Javascript, Jquery and HTML </p> -->
+                     <li class="list-group-item list-group-item">With languages and frameworks such as CSS,Javascript, Jquery and HTML</li>
                 </div>
                 <div class="col-sm-4">
-                    <img class="img-circle img-responsive img-center" src="/img/backendPic.jpg" alt="Programming Pic">
+                    <img class="img-rounded img-responsive img-center" src="/img/backendPic.jpg" alt="Programming Pic">
                     <h2>Back End Programming</h2>
-                    <p>With the help of PHP and the Laravel framework</p>
+                    <!-- <p>With the help of PHP and the Laravel framework</p> -->
+                    <li class="list-group-item list-group-item">With the help of PHP and the Laravel framework</li>
                 </div>
                 <div class="col-sm-4">
-                    <img class="img-circle img-responsive img-center" src="/img/database.jpg" alt="database">
+                    <img class="img-rounded img-responsive img-center" src="/img/database.jpg" alt="database">
                     <h2>Database Management</h2>
-                    <p>Using MySQL.</p>
+                    <!-- <p>Using MySQL.</p> -->
+                    <li class="list-group-item list-group-item  ">Using MySQL</li>
                 </div>
             </div>
             <!-- /.row -->
@@ -220,22 +222,25 @@
             </div>
         
         </div>
-
-        <div class="col-md-4" id="projectDescrition">
-            <h3>Project Description</h3>
-            <p>It is the classic simple simon game.</p>
-                <h3>Project Details</h3>
-                <ul>
-                    <li>The game is configured to start the sequence when the start game button is pressed.</li>
-                    <li>Sounds and animations will help the user have an immerse experience.</li>
-                    <li>It has animations for lighting up the buttons, starting the game, and ending the game.</li>
-                </ul>
+        
+        <div class="panel panel-info col-md-4 panelProjects">
+          <!-- Default panel contents -->
+          <div class="panel-heading"><h3>Project Description</h3></div>
+          <div class="panel-body">
+                <div class="" id="projectDescrition">
+                <p>It is the classic simple simon game.</p>
+                    <h4>Project Details:</h4><hr>
+                    <ul>
+                        <li>The game is configured to start the sequence when the start game button is pressed.</li>
+                        <li>Sounds and animations will help the user have an immerse experience.</li>
+                        <li>It has animations for lighting up the buttons, starting the game, and ending the game.</li>
+                    </ul>
+                </div>
             </div>
-
+          </div>
         </div>
         <!-- /.row -->
         <!-- End Portfolio -->
-
 
         <!-- Start resume -->
         <div>
@@ -244,6 +249,7 @@
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h1>My Resume</h1>
+                <!-- <img src="/img/profileCodeup" alt="profile" class="img-rounded" id="profilePicture"> -->
                 <hr>
             </div>
         </div>
@@ -251,7 +257,7 @@
         <div class="row">
             <div class="col-sm-12">
                 <div class="col-sm-6">
-                    <div class="panel panel-default">
+                    <div class="panel panel-info panelResume">
                       <!-- Default panel contents -->
                       <div class="panel-heading"><h3>Objectives</h3></div>
                       <!-- <div class="panel-body">
@@ -263,15 +269,10 @@
                         <li class="list-group-item">Keep learning and addapt as new technologies appear in the industry.</li>
                       </ul>
                     </div>        
-                    <!-- <h3>Objectives</h3>
-                    <ul>
-                        <li>Get work experience working as a software developer.</li>
-                        <li>Keep studying part time to get my batchelors in CS.</li>
-                        <li>Keep learning and addapt as new technologies appear in the industry.</li>
-                    </ul> -->
+                    
                 </div>
                 <div class="col-sm-6"> 
-                    <div class="panel panel-default">
+                    <div class="panel panel-info panelResume">
                       <!-- Default panel contents -->
                       <div class="panel-heading"><h3>Skills</h3></div>
                       <!-- <div class="panel-body">
@@ -283,12 +284,7 @@
                         <li class="list-group-item">Good understanding of how to approach a problem to solve it efficiently.</li>
                       </ul>
                     </div>      
-                    <!-- <h3>Skills</h3>
-                    <ul>
-                        <li>Ability to work independently and within groups.</li>
-                        <li>Critical thinking.</li>
-                        <li>Good understanding of how to approach a problem to solve it efficiently.</li>
-                    </ul> -->
+                    
                 </div>  
                 <!-- Large modal -->
                 <!-- Button trigger modal -->
@@ -361,19 +357,14 @@
     <footer>
         <div class="row" class="footer">
             <div class="col-sm-6 text-center">
-                <img src="https://www.ccc.govt.nz/themes/ccc-default/images/icons/Location-white-icon.png" class="img-footer"><span>Location</span><p>San Antonio, Texas</p>
+                <img src="https://www.ccc.govt.nz/themes/ccc-default/images/icons/Location-white-icon.png" class="img-footer"><span>San Antonio, Texas</span>
             </div>
             <div class="col-sm-6 text-center">
-                <p>
-                    <i class="fa fa-phone-square fa-2x" aria-hidden="true"></i>
-                    <br>
-                    <b>Phone:</b> 361-349-1401
-                </p>
-                <p> 
-                    <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
-                    <br>
-                    <b>Email:</b><a href="mailto:nicogranuja@hotmail.com?subject=feedback" "email me"> nicogranuja@hotmail.com</a>
-                </p>
+                <i class="fa fa-phone-square fa-2x" aria-hidden="true"></i>
+                <!-- <br> -->
+                <b>Phone:</b> 361-349-1401
+                <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+                <b>Email:</b><a href="mailto:nicogranuja@hotmail.com?subject=feedback" "email me"> nicogranuja@hotmail.com</a>
             </div>
         </div>
         <br>

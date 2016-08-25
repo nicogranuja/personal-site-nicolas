@@ -16,14 +16,14 @@ $(document).ready(function() {
 	function fadeInAnimation(element){
 		setTimeout(function() {
 			element.fadeIn("slow");
-		}, 100);
+		}, 0);
 	}
 	//message that shows first greeting.
 	function welcomeMessage() {
 		setTimeout(function() {
 			$welcome.text('Hi, I am Nicolas, welcome.');
 			$welcome.hide().fadeIn("slow");
-			$profile.hide().slideDown("slow");
+			// $profile.hide().slideDown("slow");
 
 		}, 900);
 	}
@@ -55,11 +55,12 @@ $(document).ready(function() {
 		var carouselData = $(this).data('bs.carousel');
 		var currentIndex = carouselData.getItemIndex(carouselData.$element.find('.item.active'));
 		//start writing the  page content.
-		var content = '<h3>Project Description</h3>';
+		// var content = '<h3>Project Description</h3>';
+		var content="";
 		switch (currentIndex) {
 			case 0:
 				content += '<p>It is the classic simple simon game.</p>';
-				content += '<h3>Project Details:</h3>';
+				content += '<h4>Project Details:</h4><hr>';
 				content += '<ul>';
 				content += '<li>The game is configured to start the sequence when the start game button is pressed.</li>';
 				content += '<li>Sounds and animations will help the user have an immerse experience.</li>';
@@ -68,7 +69,7 @@ $(document).ready(function() {
 				break;
 			case 1:
 				content += '<p>Weather App website uses the weather app API as well as the Google Maps API.</p>';
-				content += '<h3>Project Details:</h3>';
+				content += '<h4>Project Details:</h4><hr>';
 				content += '<ul>';
 				content += '<li>It retrieves the weather conditions for the current and next two days.</li>';
 				content += '<li>With the help of the google map you can easily change the location.</li>';
@@ -77,7 +78,7 @@ $(document).ready(function() {
 				break;
 			case 2:
 				content += '<p>Calculator App</p>';
-				content += '<h3>Project Details:</h3>';
+				content += '<h4>Project Details:</h4><hr>';
 				content += '<ul>';
 				content += '<li>The app takes two numbers or one number as input.</li>';
 				content += '<li>Calculates the selected operation.</li>';
@@ -118,7 +119,6 @@ $(document).ready(function() {
 
 	});
 
-	$profile.hide();
 	$description.hide();
 	welcomeMessage();
 

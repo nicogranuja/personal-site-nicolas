@@ -1,4 +1,4 @@
-/*!
+!
  * Start Bootstrap - Business Frontpage HTML Template (http://startbootstrap.com)
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
@@ -7,15 +7,37 @@
 body {
     /*padding-top: 5px;  Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
-
+h1{
+    color:#FFA07A;
+}
+h2{
+    color: #00A878;
+}
+h3{
+    color: #0FA3B1;
+}
+.colorK{
+    color: lightsalmon;
+}
 /* Header Image Background - Change the URL below to your image path (example: ../images/background.jpg) */
 /*css for welcome*/
 i {
     margin-top: 7px;
     font-size:40px;
 }
+.panelProjects{
+    height: 370px;
+}
+.jumbotron{
+    background-color: #D9EDF7;
+    /*color:aliceblue;*/
+}
+/*where I have all the front end back end etc stuff*/
+#abilities{
+    /*background-color: #E8EEF2;*/
+}
 .business-header {
-    height: 700px;
+    height: 400px;
     /*background: url('/img/welcomepic.jpg') center center no-repeat scroll;*/
     background: url('/img/buildings.jpeg') center center no-repeat scroll;
     -webkit-background-size: cover;
@@ -34,16 +56,18 @@ i {
 .img-center {
     margin: 0 auto;
 }
-
+.panelResume{
+    height:250px;
+}
 
 /*css for welcome*/
 #welcomeMessage{
     color:aliceblue;
 }
 #profilePicture{
-    margin-top: 170px;
+    /*margin-top: 170px;*/
     border: 1px solid aliceblue;
-    height:195px;
+    height:165px;
     width:160px;
 }
 
@@ -93,4 +117,4 @@ footer
 .modal-body {
     height: 500px;
 }
-/*css for resume*/
+/*css for resume
