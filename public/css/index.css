@@ -59,7 +59,7 @@ video  {
 footer
 {
     padding-bottom: 0;
-    height: 130px;
+    height: auto;
     width: 100%;
     color:white;
     background-color: #222222;

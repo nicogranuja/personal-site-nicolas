@@ -21,7 +21,7 @@ $(document).ready(function() {
 	//message that shows first greeting.
 	function welcomeMessage() {
 		setTimeout(function() {
-			$welcome.text('Hi, Im Nicolas, welcome.');
+			$welcome.text('Hi, I am Nicolas, welcome.');
 			$welcome.hide().fadeIn("slow");
 			$profile.hide().slideDown("slow");
 
