@@ -101,7 +101,7 @@ $(document).ready(function() {
 		var offsetImages = $('#scrollImages').offset().top;//postition of div for images
 		var offsetKnowledge = $('#scrollKnowledge').offset().top;//position of div for knowledge
 
-		if(positionY > offsetDescription-(navbarHeight*4)){
+		if(positionY > offsetDescription-(navbarHeight*5)){
 			fadeInAnimation($description);
 			// console.log('scroll carousel.');
 			//fadeLeft($description);
