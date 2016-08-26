@@ -16,15 +16,32 @@ h1{
 h3, h2{
     color: #0FA3B1;
 }
+i {
+    margin-top: 7px;
+    font-size:40px;
+}
+span
+{
+  font-weight: bold;  
+}
+video  {
+    height:500;
+}
+
+footer
+{
+    padding-bottom: 0;
+    height: auto;
+    width: 100%;
+    color:white;
+    background-color: #222222;
+    background-size: cover;
+}
 .colorK{
     color: lightsalmon;
 }
 /* Header Image Background - Change the URL below to your image path (example: ../images/background.jpg) */
 /*css for welcome*/
-i {
-    margin-top: 7px;
-    font-size:40px;
-}
 .panelProjects{
     height: 370px;
 }
@@ -34,6 +51,8 @@ i {
 }
 /*where I have all the front end back end etc stuff*/
 #abilities{
+    height:auto; 
+    /*border:1px solid black;*/
     /*background-color: #E8EEF2;*/
 }
 .business-header {
@@ -74,23 +93,6 @@ i {
 }
 
 /*css for resume*/
-span
-{
-  font-weight: bold;  
-}
-video  {
-    height:500;
-}
-
-footer
-{
-    padding-bottom: 0;
-    height: auto;
-    width: 100%;
-    color:white;
-    background-color: #222222;
-    background-size: cover;
-}
 .img-abilities{
     border:1px solid black;
     height:30vh;
