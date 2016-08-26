@@ -6,11 +6,11 @@ $(document).ready(function() {
 
 	function fadeLeft(element){
 		element.animate({ 
-			opacity: 0, 
-			right: "80px",
-			opacity:1,
-			left:"80px" 
-		},'slow');
+			left: "20px"
+		},400).animate({
+			// opacity:1,
+			right:"0px"
+		},400);
 	}
 	//fade in animation for elements
 	function fadeInAnimation(element){
@@ -102,9 +102,9 @@ $(document).ready(function() {
 		var offsetKnowledge = $('#scrollKnowledge').offset().top;//position of div for knowledge
 
 		if(positionY > offsetDescription-(navbarHeight*5)){
-			fadeInAnimation($description);
+			 fadeInAnimation($description);
 			// console.log('scroll carousel.');
-			//fadeLeft($description);
+			// fadeLeft($description);
 		}
 
 		if(positionY > offsetImages-(navbarHeight*5)){
