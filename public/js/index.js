@@ -5,17 +5,15 @@ $(document).ready(function() {
 	var $profile = $('#profilePicture');
 
 	function fadeLeft(element){
-		element.animate({ 
-			left: "20px"
-		},400).animate({
-			// opacity:1,
-			right:"0px"
-		},400);
+		$(element).animate({
+			opacity: 1,
+			left: "0px"
+		}, 1000);
 	}
 	//fade in animation for elements
 	function fadeInAnimation(element){
 		setTimeout(function() {
-			element.fadeIn("slow");
+			element.hide().fadeIn("slow");
 		}, 0);
 	}
 	//message that shows first greeting.
@@ -89,7 +87,6 @@ $(document).ready(function() {
 				console.log("default");
 		}
 		$description.html(content);
-		$description.hide();
 		fadeInAnimation($description);
 
 	});
@@ -101,10 +98,8 @@ $(document).ready(function() {
 		var offsetImages = $('#scrollImages').offset().top;//postition of div for images
 		var offsetKnowledge = $('#scrollKnowledge').offset().top;//position of div for knowledge
 
-		if(positionY > offsetDescription-(navbarHeight*5)){
-			 fadeInAnimation($description);
-			// console.log('scroll carousel.');
-			// fadeLeft($description);
+		if(positionY > offsetDescription-(navbarHeight*5)){		
+			fadeLeft($description);
 		}
 
 		if(positionY > offsetImages-(navbarHeight*5)){
@@ -119,7 +114,7 @@ $(document).ready(function() {
 
 	});
 
-	$description.hide();
+	// $description.hide();
 	welcomeMessage();
 
 

@@ -128,4 +128,10 @@ footer
 .modal-body {
     height: 500px;
 }
+
+#projectDescrition {
+    position: relative;
+    left: 50px;
+    opacity: 0;
+}
 /*css for resume
