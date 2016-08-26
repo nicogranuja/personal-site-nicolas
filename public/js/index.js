@@ -13,7 +13,7 @@ $(document).ready(function() {
 	//fade in animation for elements
 	function fadeInAnimation(element){
 		setTimeout(function() {
-			element.hide().fadeIn("slow");
+			element.fadeIn("slow");
 		}, 0);
 	}
 	//message that shows first greeting.
