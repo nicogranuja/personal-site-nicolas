@@ -19,7 +19,7 @@ $(document).ready(function() {
 	//message that shows first greeting.
 	function welcomeMessage() {
 		setTimeout(function() {
-			$welcome.text('Hi, welcome to my website.');
+			$welcome.text('Site under construction.');
 			$welcome.hide().fadeIn("slow");
 			// $profile.hide().slideDown("slow");
 
