@@ -37,6 +37,9 @@ footer
     background-color: #222222;
     background-size: cover;
 }
+.smooth{
+    font-size:20px;
+}
 .colorK{
     color: lightsalmon;
 }
@@ -57,8 +60,9 @@ footer
 }
 .business-header {
     /*height: 500px;*/
-    height:80vh; 
-    background: url('https://hd.unsplash.com/photo-1414115880398-afebc3d95efc') center center no-repeat scroll;
+    height:50vh; 
+    background: url('/img/welcomePic2.jpg') center center no-repeat scroll;
+    /*background: url('https://hd.unsplash.com/photo-1414115880398-afebc3d95efc') center center no-repeat scroll;*/
     /*background: url('/img/buildings.jpeg') center center no-repeat scroll;*/
     /*background: url('/img/stars.jpeg') center center no-repeat scroll;*/
     -webkit-background-size: cover;
@@ -84,6 +88,7 @@ footer
 /*css for welcome*/
 #welcomeMessage{
     color:aliceblue;
+    text-align: center;
 }
 #profilePicture{
     /*margin-top: 170px;*/
@@ -134,4 +139,41 @@ footer
     left: 50px;
     opacity: 0;
 }
+
+#imgFrontEnd {
+    position: relative;
+    right: 100px;
+    opacity: 0;
+}
+
+#imgBackEnd {
+    position: relative;
+    top: 100px;
+    opacity: 0;
+}
+#imgDatabase {
+    position: relative;
+    left: 100px;
+    opacity: 0;
+}
+
+#webDevProgressBar{
+    position: relative;
+    right: 100px;
+    opacity: 0;   
+}
+
+#progressC{
+    position: relative;
+    right: 100px;
+    opacity: 0;   
+}
+
+#progressJava{
+    position: relative;
+    right: 100px;
+    opacity: 0;   
+}
+
+
 /*css for resume

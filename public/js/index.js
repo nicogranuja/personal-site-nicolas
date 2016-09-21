@@ -3,24 +3,44 @@ $(document).ready(function() {
 	var $welcome = $('#welcomeMessage'); //h1 welcome message
 	var $description = $('#projectDescrition'); //p tag for describing the projects
 	var $profile = $('#profilePicture');
+	var $jumbotron = $('.jumbotron');
+	var $imgLeft = $('#imgFrontEnd');
+	var $imgMiddle = $('#imgBackEnd');
+	var $imgRight = $('#imgDatabase');
+	var $progress1 = $('#webDevProgressBar');
+	var $progress2 = $('#progressC');
+	var $progress3 = $('#progressJava');
 
-	function fadeLeft(element){
+
+	function fadeUp(element, time){
+		$(element).animate({
+			opacity: 1,
+			top: "0px"
+		}, time);
+	}
+	function fadeRight(element, time){
+		$(element).animate({
+			opacity: 1,
+			right: "0px"
+		}, time);
+	}
+	function fadeLeft(element, time){
 		$(element).animate({
 			opacity: 1,
 			left: "0px"
-		}, 1000);
+		}, time);
 	}
 	//fade in animation for elements
 	function fadeInAnimation(element){
 		setTimeout(function() {
-			element.fadeIn("slow");
+			element.fadeIn(1500);
 		}, 0);
 	}
 	//message that shows first greeting.
 	function welcomeMessage() {
 		setTimeout(function() {
-			$welcome.text('Site under construction.');
-			$welcome.hide().fadeIn("slow");
+			$welcome.text('Welcome to my website');
+			$welcome.hide().fadeIn(1000);
 			// $profile.hide().slideDown("slow");
 
 		}, 700);
@@ -97,24 +117,29 @@ $(document).ready(function() {
 		var offsetDescription = $('#scroller').offset().top;//position top of the div that will trigger the scroll event
 		var offsetImages = $('#scrollImages').offset().top;//postition of div for images
 		var offsetKnowledge = $('#scrollKnowledge').offset().top;//position of div for knowledge
+		var offsetJumbotron = $('.jumbotron').offset().top;
 
-		if(positionY > offsetDescription-(navbarHeight*5)){		
-			fadeLeft($description);
+		if(positionY > offsetJumbotron-(navbarHeight*5)){
+			$jumbotron.slideDown(1000);
+		}
+		if(positionY > offsetDescription-(navbarHeight*10)){		
+			fadeLeft($description,1000);
+		}
+		if(positionY > offsetImages-(navbarHeight*7)){
+			fadeRight($imgLeft,1000);
+			fadeUp($imgMiddle,1000);
+			fadeLeft($imgRight,1000);
 		}
 
-		if(positionY > offsetImages-(navbarHeight*5)){
-			// fadeInAnimation($description);
-			// console.log('scroll images.');
-		}
-
-		if(positionY > offsetKnowledge-(navbarHeight*5)){
-			// fadeInAnimation($description);
-			// console.log('scroll knowledge.');
+		if(positionY > offsetKnowledge-(navbarHeight*10)){
+			fadeRight($progress1,500);
+			fadeRight($progress2,700);
+			fadeRight($progress3,1100);
 		}
 
 	});
 
-	// $description.hide();
+	$jumbotron.hide();
 	welcomeMessage();
 
 
