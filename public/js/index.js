@@ -86,6 +86,15 @@ $(document).ready(function() {
 				content += '</ul>';
 				break;
 			case 1:
+				content += '<p>Starwars Wiki webpage refreshed in real time using the starwars API.</p>';
+				content += '<h4>Project Details:</h4><hr>';
+				content += '<ul>';
+				content += '<li>One page design refreshed and updated in real time.</li>';
+				content += '<li>It has information about People, Species, Vehicles, Starships, and Movies from the starwars saga.</li>';
+				content += '<li>It has a search bar to filter results in real time and a way to adjust what is being displayed on screen.</li>';
+				content += '</ul>';
+				break;
+			case 2:
 				content += '<p>Weather App website uses the weather app API as well as the Google Maps API.</p>';
 				content += '<h4>Project Details:</h4><hr>';
 				content += '<ul>';
@@ -94,7 +103,7 @@ $(document).ready(function() {
 				content += '<li>Uses ajax requests to pull data from APIs.</li>';
 				content += '</ul>';
 				break;
-			case 2:
+			case 3:
 				content += '<p>Calculator App</p>';
 				content += '<h4>Project Details:</h4><hr>';
 				content += '<ul>';
@@ -119,7 +128,7 @@ $(document).ready(function() {
 		var offsetKnowledge = $('#scrollKnowledge').offset().top;//position of div for knowledge
 		var offsetJumbotron = $('.jumbotron').offset().top;
 
-		if(positionY > offsetJumbotron-(navbarHeight*5)){
+		if(positionY > offsetJumbotron-(navbarHeight)){
 			$jumbotron.slideDown(1000);
 		}
 		if(positionY > offsetDescription-(navbarHeight*10)){		
