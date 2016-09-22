@@ -39,8 +39,8 @@ $(document).ready(function() {
 	//message that shows first greeting.
 	function welcomeMessage() {
 		setTimeout(function() {
-			$welcome.text('Welcome.');
-			$welcome.hide().fadeIn(1000);
+			// $welcome.text('Welcome.');
+			// $welcome.hide().fadeIn(1000);
 			// $profile.hide().slideDown("slow");
 
 		}, 700);
