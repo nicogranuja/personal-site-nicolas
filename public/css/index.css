@@ -6,7 +6,8 @@
 
 body {
     /*background: url('/img/skulls.png');*/
-    /*padding-top: 5px;  Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    padding-top: 5px;  /*Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. 
+    Change if height of navigation changes. */
 }
 h1{
     color:#FFA07A;
@@ -61,9 +62,9 @@ footer
 }
 .business-header {
     /*height: 500px;*/
-    height:80vh; 
+    height:100vh; 
     background: url('/img/welcomePic2.jpg') center center no-repeat scroll;
-    width: 100%
+    width: 100vw;
     /*background: url('https://hd.unsplash.com/photo-1414115880398-afebc3d95efc') center center no-repeat scroll;*/
     /*background: url('/img/buildings.jpeg') center center no-repeat scroll;*/
     /*background: url('/img/stars.jpeg') center center no-repeat scroll;*/
