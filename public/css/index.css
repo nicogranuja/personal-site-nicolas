@@ -26,9 +26,6 @@ span
 {
   font-weight: bold;  
 }
-video  {
-    height:500;
-}
 
 footer
 {
@@ -38,6 +35,11 @@ footer
     color:white;
     background-color: #222222;
     background-size: cover;
+}
+.carousel-inner{
+    max-height: 500px;
+    min-height: 200px;
+    /*height:400px;*/
 }
 .smooth{
     font-size:20px;
