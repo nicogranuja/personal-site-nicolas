@@ -61,8 +61,9 @@ footer
 }
 .business-header {
     /*height: 500px;*/
-    height:60vh; 
+    height:80vh; 
     background: url('/img/welcomePic2.jpg') center center no-repeat scroll;
+    width: 100%
     /*background: url('https://hd.unsplash.com/photo-1414115880398-afebc3d95efc') center center no-repeat scroll;*/
     /*background: url('/img/buildings.jpeg') center center no-repeat scroll;*/
     /*background: url('/img/stars.jpeg') center center no-repeat scroll;*/

@@ -39,7 +39,7 @@ $(document).ready(function() {
 	//message that shows first greeting.
 	function welcomeMessage() {
 		setTimeout(function() {
-			$welcome.text('Welcome to my website');
+			$welcome.text('Welcome.');
 			$welcome.hide().fadeIn(1000);
 			// $profile.hide().slideDown("slow");
 
